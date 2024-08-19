@@ -223,12 +223,18 @@ box-sizing: border-box
             color: var(--color-1);
             font-family: var(--fuente-1);
             font-weight: 600;
-            font-size: 16px;
+            font-size: 1rem;
         }
         .texto_tres{
             font-family: var(--fuente-1);
             font-weight: 500;
-            font-size: 14px;
+            font-size: 0.9rem;
+            border: none;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            
+            resize: none;
         }
         .boton_copiar{
             font-family: var(--fuente-1);
@@ -251,6 +257,27 @@ box-sizing: border-box
             color:var(--color-1);
             outline: 0.15rem dotted #006666;
         }
+        .boton_copiar2{
+            font-family: var(--fuente-1);
+            background-color: var(--color-3);
+            color: var(--color-2);
+            width: 80%;
+            height: 30px;
+            border-radius: 15px;
+            font-size: small;
+            font-weight: 500;
+            box-shadow: 0 2px 6px #006666;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 2px;
+            display: none;
+        }
+        .boton_copiar2:hover{
+            background-color: var(--color-2);
+            color:var(--color-1);
+            outline: 0.15rem dotted #006666;
+        }
 
 .footer{
     display: flex;
@@ -268,4 +295,100 @@ box-sizing: border-box
         font-size: medium;
     }
 
+@media (max-width: 1200px){
+    .header{
+        justify-content: center;
+        padding: 2%;
+    }
+}
+@media (max-width: 420px){
+    .header{
+        padding: 3%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .imagen_header{
+        width: 10%;
+    
+    }
+    .header_botones{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 8%;
+        width: 90%;
+        padding: 0%;
+    }
+    .presentacion-botones{
+        font-size: 0.5rem;
+        width: 220%;
+       gap: 10%;
+    }
+    .imagen_header_boton{
+        width: 30%;
+        display: inline;
+    }
+    .organización_general{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding-bottom: 8%;
+        background-position: 50% 50%;
+    }
+    .contenido_uno{
+        width: 80%;
+        height: auto;
+        gap: 15px;
+    }
+    .contenido_uno_input{
+        height: 200px;
+        width: 100%;
+    }
+    .texto_uno{
+        font-size: 0.6rem;
+        text-align: center;
+        font-weight: 600;
+    }
+    .imagen_text{
+        width: 5%;
+        height: 5%;
+    }
+    .botones{
+        width: 50%;
+        height: 50px;
+        gap: 5px;
+        font-size: smaller;
+    }
+    .botones_encrip{
+        width: 50%;
+        height: 50px;
+        gap: 5px; 
+        font-size: smaller;
+    }
+    .contenido_dos{
+        gap: 10%;
+        flex-direction: row;
+        width: 80%;
+        height: 220px; 
+        padding: 5%; 
+    }
+    .imagen_detective{
+        width: 40%;
+        padding-left: 1%;
+    }
+    .contenido_dos_textos{
+        height: 150px;
+        width: 80%;
+        gap: 15px;
+    }
+    .texto_dos{
+        font-size: smaller;
+    }
+    .texto_tres{
+        font-size: smaller;
+    }
+}
     
